@@ -15,10 +15,10 @@ namespace docker_mysql.Models
         {
         }
 
-        public virtual DbSet<Blog> Blog { get; set; }
-        public virtual DbSet<EfmigrationsHistory> EfmigrationsHistory { get; set; }
-        public virtual DbSet<Post> Post { get; set; }
-        public virtual DbSet<User> User { get; set; }
+        public  DbSet<Blog> Blog { get; set; }
+        public  DbSet<EfmigrationsHistory> EfmigrationsHistory { get; set; }
+        public  DbSet<Post> Post { get; set; }
+        public  DbSet<User> User { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
